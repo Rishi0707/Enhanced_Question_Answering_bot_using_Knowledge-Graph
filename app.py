@@ -8,9 +8,9 @@ from langchain_community.graphs import Neo4jGraph
 import vertexai
 from vertexai.language_models import TextGenerationModel
 
-NEO4J_URI = "neo4j+s://84670e5a.databases.neo4j.io"
+NEO4J_URI = ""
 NEO4J_USERNAME = "neo4j"
-NEO4J_PASSWORD = "nSSinRn0LDLFt0v0q9BPP6aXCzkJW1tkBnxCLVH8urU"
+NEO4J_PASSWORD = ""
 NEO4J_DATABASE = "neo4j"
 
 # Langchain
@@ -25,12 +25,12 @@ def access_secret_version(secret_version_id):
   response = client.access_secret_version(name=secret_version_id)
   return response.payload.data.decode('UTF-8')
 
-secret_version_id = f"projects/879477896271/secrets/projectrag/versions/1"
+secret_version_id = ""
 
 key=access_secret_version(secret_version_id)
 os.getenv(key)
 
-vertexai.init(project='mimetic-design-418015', location='us-central1')
+vertexai.init(project='', location='')
 
 VECTOR_INDEX_NAME = 'form_10k_chunks'
 VECTOR_NODE_LABEL = 'Chunk'
