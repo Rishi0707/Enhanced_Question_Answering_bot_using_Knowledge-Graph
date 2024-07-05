@@ -16,6 +16,9 @@ LangChain is a versatile framework designed for creating applications empowered 
 3) Graph DataBase (Neo4J Aura)
 Neo4j AuraDB is a fully managed cloud graph database service. Built to leverage relationships in data, AuraDB enables lightning-fast queries for real-time analytics and insights. AuraDB is reliable, secure, and fully automated, enabling you to focus on building graph applications without worrying about database administration.
 
+4) Stream Lit (for Frontend)
+
+   
 Methodology
 The methodology involves a combination of data preprocessing, knowledge graph construction, large language model fine-tuning, system integration, and evaluation. The process includes developing separate models for question answering, enhancing them with knowledge graph embeddings, and integrating them into a unified system
 
